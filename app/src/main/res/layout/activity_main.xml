@@ -6,107 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textViewShape"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="195dp"
-        android:text="Button Not Clicked"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="240dp" />
-
-    <Button
-        android:id="@+id/clickMe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"
-        android:text="Calculate"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="389dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="42dp"
-        android:text="Length 1:" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="100dp"
-        android:text="Length 2:"
-        android:visibility="invisible" />
-
-    <TextView
-        android:id="@+id/textViewOutput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="170dp"
-        android:text="Area Appears Here" />
-
     <ImageButton
         android:id="@+id/squareButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-42dp"
-        android:layout_marginTop="141dp"
-        android:layout_toEndOf="@+id/textView2"
+        android:layout_width="99dp"
+        android:layout_height="98dp"
+        android:layout_alignTop="@+id/circleButton"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="-1dp"
+        android:layout_toEndOf="@+id/triangleButton"
         app:srcCompat="@drawable/square" />
 
     <ImageButton
         android:id="@+id/circleButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="95dp"
+        android:layout_height="95dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="142dp"
+        android:layout_marginTop="95dp"
         app:srcCompat="@drawable/circle" />
-
-    <EditText
-        android:id="@+id/editTextLength1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-13dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="0" />
-
-    <EditText
-        android:id="@+id/editTextLength2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="89dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="0"
-        android:visibility="invisible" />
 
     <ImageButton
         android:id="@+id/triangleButton"
+        android:layout_width="98dp"
+        android:layout_height="94dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="96dp"
+        app:srcCompat="@drawable/triangle" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="-45dp"
-        android:layout_marginTop="142dp"
-        android:layout_toEndOf="@+id/editTextLength1"
-        app:srcCompat="@drawable/triangle" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="153dp"
+        android:text="Tap A Shape"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
 
 </RelativeLayout>
